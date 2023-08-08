@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="column-header">
+          <h1 id="title">Bagaimana Pengalaman Belajar Anda?</h1>
+          <p id="description">
+            Kami ingin mengetahui lebih banyak tentang pengalaman Anda dengan
+            kursus ini. Terima kasih telah meluangkan waktu untuk membantu kami
+            dalam meningkatkan platform.
+          </p>
+        </div>
+
+        <div class="column-image">
+          <div id="image-div">
+            <img
+              src="img/learning.png"
+              width="400"
+              height="400"
+              alt="Survey form icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nama</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Masukkan email Anda"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Usia</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Masukkan usia Anda saat ini"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Status Pekerjaan</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Pilih status Anda saat ini</option>
+            <option value="pelajar">Pelajar</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="freelancer">Pekerja Lepas (Freelancer)</option>
+            <option value="entrepreneur">Wiraswasta</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Seberapa baik Anda menilai kursus ini?</p>
+          <label>
+            <input
+              name="user-rate"
+              value="excellent"
+              type="radio"
+              class="input-radio"
+              checked
+            />Sangat baik</label
+          >
+          <label>
+            <input
+              name="user-rate"
+              value="good"
+              type="radio"
+              class="input-radio"
+            />Baik</label
+          >
+
+          <label>
+            <input
+              name="user-rate"
+              value="fair"
+              type="radio"
+              class="input-radio"
+            />Cukup</label
+          >
+
+          <label>
+            <input
+              name="user-rate"
+              value="poor"
+              type="radio"
+              class="input-radio"
+            />Buruk</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Seberapa berguna materi kursus ini (bacaan, video, tugas, dll)?</p>
+          <label>
+            <input
+              name="materials-rate"
+              value="extremely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Sangat berguna</label
+          >
+          <label>
+            <input
+              name="materials-rate"
+              value="somewhat"
+              type="radio"
+              class="input-radio"
+            />Cukup berguna</label
+          >
+
+          <label>
+            <input
+              name="materials-rate"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />Tidak berguna sama sekali</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Komentar atau saran lainnya?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Tulis komentar Anda di sini!"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Kirim</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="footer">
+      <p>Copyright &copy 2023 <strong>ariefmhd.</strong> All Rights Reserved</p>
+    </section>
+  </body>
+</html>
